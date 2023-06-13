@@ -1,0 +1,143 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "using_my_math.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Test Module: my_math.ipynb\n",
+        "\n",
+        "In this notebook, write some code to test the functions in *my_math.ipynb* by importing the file as python module. *my_math.ipynb* has some basic arithmetic functions in it.\n",
+        "\n",
+        "We will try importing as a python script and as a notebook.\n",
+        "\n",
+        "## Task 0 - Import this notebook to GitHub\n",
+        "Save the notebook to your local GitHub repository.\n",
+        "\n",
+        "## Task 1 - Import as a Python script\n",
+        "To do this you will need to:\n",
+        "* open my_math.ipynb from the ISYS2001 Worksheets repository\n",
+        "* download/save as my_math.py\n",
+        "* from this notebook upload my_math.py.  This will put it in the same folder as this notebook.\n",
+        "* Import the my_math module\n",
+        "\n",
+        "    import my_math\n",
+        "* write some code to test the functions in my_math module"
+      ],
+      "metadata": {
+        "id": "pM6Ipzg-fJzT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "dhIEuP0VAFGJ",
+        "outputId": "573b8f6a-aecb-4dae-f40a-8c6b5bf415fa",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "vc2SBxd8fDyE",
+        "outputId": "313acf20-57b0-48fe-a53e-03fd66aeab1e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "-10\n",
+            "0.5\n",
+            "200\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Download my_math.ipynb as .py into local computer\n",
+        "#Upload the file my_math.py to google drive\n",
+        "#on notebook, mount yur google drive into google colab\n",
+        "#copy path of the file\n",
+        "#write the command: cp <file_path> /content\n",
+        "#copying the content of my_math.py to the document directory\n",
+        "!cp /content/drive/MyDrive/my_math.py /content\n",
+        "#import your module\n",
+        "import my_math\n",
+        "#use the function available in the module\n",
+        "x = 10\n",
+        "y = 20\n",
+        "result = my_math.add(x, y)\n",
+        "result1 = my_math.subtract(x, y)\n",
+        "result2 = my_math.divide(x, y)\n",
+        "result3 = my_math.multiply(x, y)\n",
+        "print(result)\n",
+        "print(result1)\n",
+        "print(result2)\n",
+        "print(result3)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Task 2 - Import as a Notebook\n",
+        "\n",
+        "To do this you will need:\n",
+        "* intall margo loader\n",
+        "* open my_math.ipynb from the ISYS2001 Worksheets repository\n",
+        "* download as a notebook my_math.ipynb\n",
+        "* from this notebook upload my_math.ipynb.  This will put it in the same folder as this notebook.\n",
+        "* import the notebook\n",
+        "    import margo_loader\n",
+        "    import my_math\n",
+        "\n",
+        "* Wrtie some code to test the functions in my_math notebook \n"
+      ],
+      "metadata": {
+        "id": "3mChsfz3hbv2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "QOOQhfvIiOss"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
